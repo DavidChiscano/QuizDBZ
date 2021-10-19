@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="centrarPreguntas.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<title>Quiz pregunta 7</title>
+</head>
+
+<body>
+
+	<div class="contenedorPreguntas">
+	<h1>¿Que personaje de Dragon Ball Z eres?</h1>
+		<h2>¿Qué personaje te gustaría ser? (goku, vegeta, bulma, freezer)</h2>
+		<form th:action="@{/Pregunta7}" method="POST">
+			<p>
+				<input type="text" name="crees" required minlength="3" maxlength="10" size="10">
+				</br>
+			<p><input type="submit" value="Enviar"></p>
+			</p>
+		</form>
+	</div>
+</body>
+
+</html>

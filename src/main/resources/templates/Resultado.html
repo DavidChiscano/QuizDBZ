@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns:th="http://www.thymeLeaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="resultado.css">
+</head>
+
+<body>
+
+<div class="card">
+  <div class="card-header">Resultado</div>
+  <div class="card-body">
+    <h4 class="card-title">Puntos obtenidos</h4>
+    <p class="card-text">
+    <p th:text=${resultado}></p>
+    Usuario: <p th:text=${nombreUsuario}></p>
+	Puntos obtenidos: <p th:text=${puntos}></p>
+	Puntuaciones en la BBDD:
+	<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Puntos</th>
+    </tr>
+  </thead>
+  <tbody>
+		<tr class="table-active" th:each="usuario: ${puntuaciones}">
+			<td th:text="${usuario.Nombre}" />
+			<td th:text="${usuario.Puntos}" />
+		</tr>
+  </tbody>
+</table>
+  </div>
+</div>
+<div class="contenedor">
+<h1>Te pareces a...</h1>
+	<img class="im" th:src=${personaje} />
+</div>
+</body>
+</html>

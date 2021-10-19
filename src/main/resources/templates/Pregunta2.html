@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="centrarPreguntas.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<title>Quiz pregunta 2</title>
+</head>
+
+<body>
+
+	<div class="contenedorPreguntas">
+	<h1>¿Que personaje de Dragon Ball Z eres?</h1>
+		<h2>¿Qué valoras más?</h2>
+		<form th:action="@{/Pregunta2}" method="POST">
+			<p>
+				<input type="radio" name="valor" value="Disciplina"> Disciplina
+				</br>
+				<input type="radio" name="valor" value="Amistad" checked="1"> Amistad
+				</br>
+				<input type="radio" name="valor" value="Poder"> Poder
+				</br>
+				<input type="radio" name="valor" value="Familia"> Familia
+			<p><input type="submit" value="Enviar"></p>
+			</p>
+		</form>
+	</div>
+</body>
+
+</html>

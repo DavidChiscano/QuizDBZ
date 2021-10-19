@@ -1,0 +1,22 @@
+body{
+	margin-left: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.card{
+	margin-top: 20px;
+	width: 60rem;
+	justify-content: justify;
+	padding: 0;
+}
+
+.im{
+	width:500px;
+	align-self: right;
+}
+.contenedor{
+	display: flex;
+	flex-direction: column;
+}

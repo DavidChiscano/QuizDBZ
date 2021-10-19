@@ -1,0 +1,23 @@
+input[type=submit]{
+	width: 200px;
+	height: 50px;
+}
+input[type=radio] {
+    height: 20px;
+    width: 20px;
+}
+p{
+	font-size: 24px;
+}
+.contenedor{
+	font-size: 48px;
+    display: block;
+    text-align: center;
+    justify-content: flex-end;
+}
+.contenedorPreguntas{
+	width: 30%;
+	padding: 2em;
+	border: 1px solid black;
+	margin-left: 20px;
+}

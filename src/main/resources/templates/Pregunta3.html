@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="centrarPreguntas.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<title>Quiz pregunta 3</title>
+</head>
+
+<body>
+
+	<div class="contenedorPreguntas">
+	<h1>¿Que personaje de Dragon Ball Z eres?</h1>
+		<h2>¿Que prefieres hacer en tu tiempo libre?</h2>
+		<form th:action="@{/Pregunta3}" method="POST">
+			<p>
+				<input type="checkbox" name="opc" value="Pasar tiempo con amigos / familia">Pasar tiempo con amigos /
+				familia
+				</br>
+				<input type="checkbox" name="opc" value="Entrenar mis capacidades físicas" checked="1">Entrenar mis
+				capacidades físicas
+				</br>
+				<input type="checkbox" name="opc" value="Pensar un plan para destruir el mundo">Pensar un plan para
+				destruir el mundo
+				</br>
+				<input type="checkbox" name="opc" value="Estar solo con mis pensamientos">Estar solo con mis
+				pensamientos
+				</br>
+			<p><input type="submit" value="Enviar"></p>
+			</p>
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="centrarPreguntas.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<title>Quiz pregunta 6</title>
+</head>
+
+<body>
+
+	<div class="contenedorPreguntas">
+	<h1>¿Que personaje de Dragon Ball Z eres?</h1>
+		<h2>¿Cuál es tu meta a largo plazo?</h2>
+		<form th:action="@{/Pregunta6}" method="POST">
+			<p>
+				<input type="radio" name="meta" value="Demostrar mi valía personal"> Demostrar mi valía personal
+				</br>
+				<input type="radio" name="meta" value="Formar una familia"> Formar una familia
+				</br>
+				<input type="radio" name="meta" value="Dominar el mundo"> Dominar el mundo
+				</br>
+				<input type="radio" name="meta" value="Proteger a los demás" checked="1"> Proteger a los demás
+			<p><input type="submit" value="Enviar"></p>
+			</p>
+		</form>
+	</div>
+</body>
+
+</html>
